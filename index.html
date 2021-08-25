@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime chat</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container text-center py-5">
+
+    <!-- Chat Section -->
+    <section class="head">
+        <h1 class="">Realtime Chat</h1>
+    </section>
+
+    <!-- Channel selection section -->
+    <section class="channel">
+        <h5 class="font-weight-normal mt-4">Choose a chatroom:</h5>
+        <button class="btn btn-info">#General</button>
+        <button class="btn btn-info">#Gaming</button>
+        <button class="btn btn-info">#Music</button>
+        <button class="btn btn-info">#Coding</button>
+    </section>
+
+    <!-- Chat section -->
+    <section class="chat">
+        <form class="chat-from m-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Your Message:</div>
+                </div>
+                <input class="form-control" type="text" id="chat" required>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-info">Send</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Name chaging Section -->
+    <section class="change-name">
+        <form action="" class="chat-form m-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Update Name:</div>
+                </div>
+                <input type="text" class="form-control" id="name">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-info">Change</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Messages Section -->
+    <section class="messages">
+        <ul class="message-list list-group">
+            
+        </ul>
+    </section>
+</div>
+
+<script src="chat.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
