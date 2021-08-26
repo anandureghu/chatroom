@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realtime chat</title>
 
+    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -63,6 +65,75 @@
         </ul>
     </section>
 </div>
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBn5f3H3EDi2DkMSUfcND5fCA7xAWJdRLU",
+        authDomain: "modernjs-9badc.firebaseapp.com",
+        projectId: "modernjs-9badc",
+        storageBucket: "modernjs-9badc.appspot.com",
+        messagingSenderId: "948419014969",
+        appId: "1:948419014969:web:4a4edf0cfbda34308d38e8",
+        measurementId: "G-TR14XYCR3E"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    
+      const db = firebase.firestore();
+    </script>
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
+
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBn5f3H3EDi2DkMSUfcND5fCA7xAWJdRLU",
+      authDomain: "modernjs-9badc.firebaseapp.com",
+      projectId: "modernjs-9badc",
+      storageBucket: "modernjs-9badc.appspot.com",
+      messagingSenderId: "948419014969",
+      appId: "1:948419014969:web:4a4edf0cfbda34308d38e8",
+      measurementId: "G-TR14XYCR3E"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    const db = getFirestore();
+
+    export default {db: db};
+
+  </script> -->
 
 <script src="chat.js"></script>
 <script src="ui.js"></script>
