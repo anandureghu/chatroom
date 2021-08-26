@@ -1,5 +1,7 @@
 .container{
     max-width: 600px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .btn{
@@ -13,4 +15,22 @@
 
 .time{
     font-size: 0.7em;
+}
+
+.top-section{
+    max-height: 28vh;
+}
+
+.message-section{
+    max-height: 75vh;
+
+}
+
+.chat{
+    max-height: 8vh;
+}
+
+.messages{
+    max-height: 65vh;
+    overflow-y: scroll !important;
 }

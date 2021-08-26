@@ -12,8 +12,8 @@
 </head>
 <body>
 
-<div class="container text-center py-5">
-
+<div class="container text-center pt-1">
+<div class="top-section">
     <!-- Chat Section -->
     <section class="head">
         <h1 class="">Realtime Chat</h1>
@@ -21,18 +21,18 @@
 
     <!-- Channel selection section -->
     <section class="channel">
-        <h5 class="font-weight-normal mt-4">Choose a chatroom:</h5>
-        <button class="btn btn-info">#General</button>
-        <button class="btn btn-info">#Gaming</button>
-        <button class="btn btn-info">#Music</button>
-        <button class="btn btn-info">#Coding</button>
+        <h5 class="font-weight-normal mt-2 text-muted">Choose a chatroom:</h5>
+        <button class="btn btn-info" id="general">#General</button>
+        <button class="btn btn-info" id="gaming">#Gaming</button>
+        <button class="btn btn-info" id="music">#Music</button>
+        <button class="btn btn-info" id="training">#Training</button>
     </section>
 
     
 
     <!-- Name chaging Section -->
     <section class="change-name">
-        <form action="" class="chat-form m-3">
+        <form action="" class="name-form mt-2">
             <div class="input-group">
                 <div class="input-group-prepend">
                     <div class="input-group-text">Update Name:</div>
@@ -44,6 +44,9 @@
             </div>
         </form>
     </section>
+</div>
+
+<div class="message-section mt-1">
 
     <!-- Messages Section -->
     <section class="messages">
@@ -53,19 +56,21 @@
     </section>
 
     <!-- Chat section -->
-    <section class="chat">
-        <form class="chat-from m-3">
+    <section class="chat float-bottom">
+        <form class="chat-form mt-2">
             <div class="input-group">
                 <div class="input-group-prepend">
                     <div class="input-group-text">Your Message:</div>
                 </div>
-                <input class="form-control" type="text" id="chat" required>
+                <input class="form-control" type="text" id="message">
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-info">Send</button>
                 </div>
             </div>
         </form>
     </section>
+
+</div>
 
 </div>
 

@@ -10,8 +10,8 @@ class ChatUI{
             <span>${data.message}</span>
             <br>
             <span class="text-muted time">${data.created_at.toDate().toLocaleString()}</span>
-        </li>;
-        `
+        </li>
+        `;
         this.list.innerHTML += html;
     }
 }
